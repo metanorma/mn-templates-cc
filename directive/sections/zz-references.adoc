@@ -1,0 +1,9 @@
+
+[bibliography]
+== Bibliography
+
+* [[[CCDOC,CC/DIR 10002]]], _CalConnect Directive 10002: Document requirements_
+
+* [[[IETFRFC2026,IETF RFC 2026]]], _IETF RFC 2026: Internet Standards Process_
+
+* [[[ITUMARKS,ITU-T Marks Guidelines 2.0]]], _ITU-T GUIDELINES RELATED TO THE INCLUSION OF MARKS IN ITU-T RECOMMENDATIONS, Issue 2.0_, November 2005.

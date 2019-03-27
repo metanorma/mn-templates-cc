@@ -1,0 +1,18 @@
+
+[[tda]]
+[source="CCSTD"]
+[[terms]]
+== Terms and definitions
+
+[[term-contribution]]
+=== contribution
+
+material provided as input to a CalConnect standardization activity
+
+NOTE: a contribution can be provided by a member of CalConnect or an external party
+
+
+=== contributor
+
+party that provides a _contribution_ (<<term-contribution>>)
+

@@ -1,0 +1,37 @@
+= Intellectual property rights policy
+:docnumber: 19999
+:copyright-year: 2019
+:language: en
+:doctype: directive
+:edition: 1
+:status: proposal
+:revdate: 2019-03-18
+:published-date: 2019-03-18
+:technical-committee: PUBLISH
+:draft:
+:toc:
+:stem:
+:xrefstyle: short
+:imagesdir: images
+:docfile: cc-document.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
+:sectnums!:
+
+include::sections/0a-foreword.adoc[]
+
+include::sections/0b-intro.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm-refs.adoc[]
+
+include::sections/03-termsdef.adoc[]
+
+include::sections/04-content.adoc[]
+
+include::sections/a1-annex-1.adoc[]
+
+include::sections/zz-references.adoc[]

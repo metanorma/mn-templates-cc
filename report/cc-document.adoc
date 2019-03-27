@@ -1,0 +1,39 @@
+= Calendar operator practices -- Report template
+:docnumber: 19999
+:status: proposal
+:doctype: report
+:edition: 1
+:copyright-year: 2019
+:revdate: 2019-09-10T00:00:00Z
+:language: en
+:technical-committee: CALSPAM
+:fullname: Josiah Carberry, Brown University
+:draft:
+:toc:
+:stem:
+:xrefstyle: short
+:imagesdir: images
+:docfile: cc-document.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
+//:published-date: 2019-09-10T00:00:00Z
+
+include::sections/0a-foreword.adoc[]
+
+include::sections/0b-intro.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm-refs.adoc[]
+
+include::sections/03-termsdef.adoc[]
+
+include::sections/04-content.adoc[]
+
+include::sections/05-conclusion.adoc[]
+
+include::sections/a1-annex-1.adoc[]
+
+include::sections/zz-references.adoc[]

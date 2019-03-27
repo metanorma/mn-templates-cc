@@ -1,0 +1,53 @@
+
+[[tda]]
+[source=CC18011]
+== Terms, definitions, symbols and abbreviations
+
+=== Terms and definitions
+
+[[term-repeat-rule]]
+==== repeat rule
+
+consists of a set of eligible time intervals (<<term-eti>>) and
+selection rules (<<term-sel-rule>>) that allows computation of a set of
+matching instants (<<term-matching-instants>>)
+
+[[term-sel-rule]]
+==== selection rule
+
+rule specifying restrictions on the value of a _time scale component_
+(<<ISO8601-1,clause 3.1.3.9>>)
+
+
+[[symbols]]
+=== Symbols
+
+[[symbols-general]]
+==== General
+
+Representations specified in this document make use of symbols given in <<CC18011>> and the following.
+
+
+[[symbols-composite]]
+==== Composite component symbols
+
+selection::
+representation for a set of selection rules as determined in <<selection-general>>
+
+
+[[symbols-inplace]]
+==== Symbols used in place of digits or signs
+
+These symbols are used to represent characters in the date and time
+representations. They are used in representations only, and are
+replaced by one or more characters, as described, in expressions:
+
+n::
+a positive integer or value, may be left absent to signify an unbounded value
+
+i::
+a positive integer
+
+!::
+indicates that the token following this symbol is optional (may be omitted)
+

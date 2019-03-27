@@ -1,0 +1,5 @@
+
+[bibliography]
+== Bibliography
+
+* [[[CC0707,CC/R 0707]]], _CalConnect Report: EDST (Extended Daylight Savings Time) Reflections and Recommendations_

@@ -1,0 +1,42 @@
+
+[[status]]
+:sectnums:
+== Status of documents since last conference
+
+Specifications in progress and not yet published are generally resident on GitHub either in our public or private areas.
+
+=== Documents at CalConnect
+
+==== Published
+
+...
+
+==== Committee Drafts
+
+...
+
+
+=== Documents at ISO
+
+...
+
+
+=== Documents at the IETF
+
+...
+
+==== Published as Proposed Standard
+
+...
+
+==== Too be Published as Informational RFCs
+
+...
+
+==== CalConnect Drafts in Working Group Last Call
+
+...
+
+==== CalConnect Drafts submitted not assigned to WG
+
+...

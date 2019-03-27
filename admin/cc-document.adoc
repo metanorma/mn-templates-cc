@@ -1,0 +1,37 @@
+= Report on CalConnect Conference XXXX, June 1-5, 2029
+:docnumber: 19999
+:copyright-year: 2018
+:language: en
+:doctype: administrative
+:edition: 1
+:status: proposal
+:revdate: 2029-06-29T00:00:00Z
+:published-date: 2029-06-29T00:00:00Z
+:technical-committee: CHAIRS
+:docfile: cc-document.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
+:toc:
+:stem:
+
+include::sections/0a-foreword.adoc[]
+
+include::01-status.adoc[]
+
+include::02-liaisons.adoc[]
+
+include::03-conference.adoc[]
+
+include::04-plenary.adoc[]
+
+include::05-events.adoc[]
+
+include::06-pictures.adoc[]
+
+include::0a-foreword.adoc[]
+
+include::0b-intro.adoc[]
+
+include::zz-references.adoc[]

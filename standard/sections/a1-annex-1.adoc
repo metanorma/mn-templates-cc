@@ -1,0 +1,6 @@
+
+[[annexa]]
+[appendix,obligation=informative]
+== An informative annex
+
+Annex content.

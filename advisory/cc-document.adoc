@@ -1,0 +1,37 @@
+= CalConnect document -- Advisory template
+:docnumber: 19999
+:copyright-year: 2019
+:language: en
+:doctype: advisory
+:edition: 1
+:status: proposal
+:revdate: 2018-10-30
+:language: en
+:technical-committee: Ad Hoc SOMETHING Committee
+:published-date: 2018-10-30
+:toc:
+:stem:
+:xrefstyle: short
+:imagesdir: images
+:docfile: cc-document.adoc
+:mn-document-class: csd
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
+
+
+////
+:sectnums!:
+
+include::sections/00-foreword.adoc[]
+include::sections/00-intro.adoc[]
+
+:sectnums:
+////
+
+include::sections/01-summary.adoc[]
+include::sections/02-content.adoc[]
+include::sections/03-actions.adoc[]
+include::sections/04-contact.adoc[]
+include::sections/05-about.adoc[]
+include::sections/99-bibliography.adoc[]

@@ -1,0 +1,4 @@
+
+== About CalConnect
+
+_CalConnect, the Calendaring & Scheduling Consortium, pursues the wide availability of truly interoperable collaboration tools through the use of open standards. We are the authoritative voice of calendaring and scheduling; much of our work touches on, or is applicable to, other collaboration technologies. See more at https://www.calconnect.org[www.calconnect.org]._

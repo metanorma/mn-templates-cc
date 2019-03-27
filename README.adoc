@@ -1,0 +1,8 @@
+= CalConnect Metanorma Templates
+
+This GitHub repository contains templates for CalConnect Metanorma documents.
+
+Note that the Apache license applies only to the templates.
+Once a document has been created, the license must reflect the CalConnect document license.
+
+This repository is used by the `metanorma new` command to create new documents.

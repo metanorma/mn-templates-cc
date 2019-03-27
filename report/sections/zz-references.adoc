@@ -1,0 +1,7 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ISOIEC646,ISO/IEC 646]]], _Information technology -- ISO 7-bit coded character set for information interchange_
+
+* [[[RFC5545,IETF RFC 5545]]], _AUTOFILL_

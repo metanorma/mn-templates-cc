@@ -1,0 +1,6 @@
+
+:sectnums:
+[[scope]]
+== Scope
+
+Scope.

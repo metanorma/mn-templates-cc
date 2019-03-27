@@ -1,0 +1,18 @@
+
+== Pictures from CalConnect XXXX
+
+Pictures courtesy of Thomas Schäfer, 1&1.
+
+////
+[cols="a,a"]
+|===
+
+|image::img_2611.jpg[]
+|image::img_2653.jpg[]
+|image::img_2656.jpg[]
+|image::img_2682.jpg[]
+|image::img_2685.jpg[]
+|
+
+|===
+////
