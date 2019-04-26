@@ -1,0 +1,13 @@
+language: ruby
+os:
+- linux
+- osx
+rvm:
+- 2.5
+before_install:
+- gem install metanorma-cli
+script:
+- |
+  for template in advisory collection directive report standard; do
+    metanorma new test/$template --type csd --doctype $template --template ./$template
+  done
