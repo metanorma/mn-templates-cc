@@ -17,9 +17,10 @@ before_test:
   - gem -v
 
 test_script:
-  - |
-    set doctypes=advisory collection directive report standard
-    for %%t in (%doctypes%) do metanorma new test\%%t --type csd --doctype %%t --template %APPVEYOR_BUILD_FOLDER%\%%t
+  - for %%t in (advisory collection directive report standard) do (
+      metanorma new test\%%t --type csd --doctype %%t --template . --overwrite &
+      metanorma compile %APPVEYOR_BUILD_FOLDER%\test\%%t\document.adoc
+    )
 
 on_finish:
   - 7z a %APPVEYOR_BUILD_FOLDER%\result.zip %APPVEYOR_BUILD_FOLDER%\test
