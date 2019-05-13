@@ -5,9 +5,12 @@ os:
 rvm:
 - 2.5
 before_install:
+- nvm install 8
+- npm install -g puppeteer
 - gem install metanorma-cli
 script:
 - |
   for template in advisory collection directive report standard; do
-    metanorma new test/$template --type csd --doctype $template --template ./$template
+    metanorma new test/$template --type csd --doctype $template --template . --overwrite
+    metanorma compile test/$template/document.adoc
   done
