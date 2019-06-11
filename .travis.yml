@@ -12,5 +12,5 @@ script:
 - |
   for template in advisory collection directive report standard; do
     metanorma new test/$template --type csd --doctype $template --template . --overwrite
-    metanorma compile test/$template/document.adoc
+    metanorma compile $PWD/test/$template/document.adoc
   done
