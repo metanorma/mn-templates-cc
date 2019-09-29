@@ -4,7 +4,7 @@
 :doctype: report
 :edition: 1
 :copyright-year: 2019
-:revdate: 2019-09-10T00:00:00Z
+:revdate: 2019-09-10
 :language: en
 :technical-committee: CALSPAM
 :fullname: Josiah Carberry, Brown University
@@ -18,7 +18,7 @@
 :mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
-//:published-date: 2019-09-10T00:00:00Z
+:published-date: 2019-09-10
 
 include::sections/0a-foreword.adoc[]
 
