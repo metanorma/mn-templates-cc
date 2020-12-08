@@ -21,12 +21,10 @@
 
 
 ////
-:sectnums!:
 
 include::sections/00-foreword.adoc[]
 include::sections/00-intro.adoc[]
 
-:sectnums:
 ////
 
 include::sections/01-summary.adoc[]

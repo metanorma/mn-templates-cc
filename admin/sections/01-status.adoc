@@ -1,6 +1,5 @@
 
 [[status]]
-:sectnums:
 == Status of documents since last conference
 
 Specifications in progress and not yet published are generally resident on GitHub either in our public or private areas.
