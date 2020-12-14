@@ -64,10 +64,17 @@ Permitted types are:
 
 
 include::sections/00-foreword.adoc[]
+
 include::sections/00-introdcution.adoc[]
+
 include::sections/01-scope.adoc[]
+
 include::sections/02-norm_refs.adoc[]
+
 include::sections/03-terms_defs.adoc[]
+
 include::sections/04-main_content.adoc[]
+
 include::sections/aa-informative_annex.adoc[]
+
 include::sections/ab-normative_annex.adoc[]
