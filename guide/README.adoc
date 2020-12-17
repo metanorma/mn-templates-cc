@@ -1,8 +1,6 @@
 = CalConnect Template: Guide
 
-This repository contains the CalConnect CSD Guide document template.
-
-image:https://travis-ci.com/travis-account/my-repo-name.svg?branch=master["Build Status", link="https://travis-ci.com/travis-account/my-repo-name"]
+This repository contains the CalConnect Guide document template.
 
 This document is available in its rendered forms here:
 

@@ -1,6 +1,6 @@
 = CalConnect Template: Amendment
 
-This repository contains the CalConnect CSD Amendment document template.
+This repository contains the CalConnect Amendment document template.
 
 image:https://travis-ci.com/travis-account/my-repo-name.svg?branch=master["Build Status", link="https://travis-ci.com/travis-account/my-repo-name"]
 
