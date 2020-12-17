@@ -1,0 +1,80 @@
+= CalConnect Standard: Calendar operator practices -- Guidelines to protect against calendar abuse
+:comment: ### CalConnect Technical Corrigendum document template
+:comment: ### Document title
+:title: Calendar operator practices -- Guidelines to protect against calendar abuse
+:comment: ### CalConnect document number, as allocated by TCC
+:docnumber: 18003
+:comment: ### Status of the document. See comment 1 below.
+:status: published
+:comment: ### Type of the document. See comment 2 below.
+:doctype: technical-corrigendum
+:comment: ### Document edition
+:edition: 1
+:comment: ### Year of copyright
+:copyright-year: 2019
+:comment: ### Last update date
+:revdate: 2019-01-18
+:comment: ### Date on which the standard was published (distributed by the publisher).
+:published-date: 2019-01-18
+:comment: ### Full name of a person who is contributor to the document.
+:fullname: Thomas Schäfer, 1&1 Mail&Media Development and Technology GmbH
+:fullname_2: Jesse Thompson, University of Wisconsin-Madison
+:comment: ### Two-letter code of the Language the document is written in according to ISO 639-1.
+:language: en
+:comment: ### Name of the relevant CSD technical committee
+:technical-committee: CALSPAM
+:comment: ### Directory in which images are located: all local image file locations are prefixed with this directory. (Optional.)
+:imagesdir: images
+:comment: ### Name of this AsciiDoc file
+:docfile: document.adoc
+:comment: ### CalConnect Metanorma flavour code
+:mn-document-class: csd
+:comment: ### Desired output formats
+:mn-output-extensions: xml,html,pdf
+:local-cache-only:
+:data-uri-image:
+
+
+////
+Comment 1: status
+
+Permitted types are:
+- proposal
+- working-draft
+- committee-draft
+- draft-standard
+- final-draft
+- published
+- withdrawn
+
+
+Comment 2: doctype
+
+Permitted types are:
+- administrative
+- advisory
+- directive
+- report
+- standard
+- guide
+- specification
+- amendment
+- technical corrigendum
+////
+
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introdcution.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm_refs.adoc[]
+
+include::sections/03-terms_defs.adoc[]
+
+include::sections/04-main_content.adoc[]
+
+include::sections/aa-informative_annex.adoc[]
+
+include::sections/ab-normative_annex.adoc[]
