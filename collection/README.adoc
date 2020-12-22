@@ -23,26 +23,21 @@ git clone https://github.com/CalConnect/csd-admin-documents
 See https://www.metanorma.com/[Metanorma setup].
 
 
-== Build
+== Generate the mini site
 
-[source,sh]
-----
-make clean all
-----
+First of all, if you don't have already then please install the latest
+https://github.com/metanorma/metanorma-cli[Metanorma CLI], then you can build
+the mini site using:
 
-== Open the generated HTML index
-
-[source,sh]
+[source, sh]
 ----
-open documents.html
+metanorma site generate ./sources --output-dir published
 ----
 
-== Publish
+The generated HTML site will be prepared in `published/`. and you can open the
+index page using:
 
-[source,sh]
+[source, sh]
 ----
-make publish
+open published/index.html
 ----
-
-The generated HTML site will be prepared in `published/`.
-
