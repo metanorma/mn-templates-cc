@@ -1,6 +1,8 @@
-= CalConnect Template: Directive
+= CalConnect Template: Amendment
 
-This repository contains the CalConnect Directive document template.
+This repository contains the CalConnect Amendment document template.
+
+image:https://travis-ci.com/travis-account/my-repo-name.svg?branch=master["Build Status", link="https://travis-ci.com/travis-account/my-repo-name"]
 
 This document is available in its rendered forms here:
 

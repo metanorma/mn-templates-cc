@@ -1,6 +1,6 @@
-= CalConnect Template: Directive
+= CalConnect Template: Technical Corrigendum
 
-This repository contains the CalConnect Directive document template.
+This repository contains the CalConnect Technical Corrigendum document template.
 
 This document is available in its rendered forms here:
 

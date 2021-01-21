@@ -21,17 +21,21 @@
 
 
 ////
-:sectnums!:
 
 include::sections/00-foreword.adoc[]
+
 include::sections/00-intro.adoc[]
 
-:sectnums:
 ////
 
 include::sections/01-summary.adoc[]
+
 include::sections/02-content.adoc[]
+
 include::sections/03-actions.adoc[]
+
 include::sections/04-contact.adoc[]
+
 include::sections/05-about.adoc[]
+
 include::sections/99-bibliography.adoc[]

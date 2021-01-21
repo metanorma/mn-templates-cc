@@ -1,6 +1,6 @@
-= CalConnect Template: Directive
+= CalConnect Template: Specification
 
-This repository contains the CalConnect Directive document template.
+This repository contains the CalConnect Specification document template.
 
 This document is available in its rendered forms here:
 
