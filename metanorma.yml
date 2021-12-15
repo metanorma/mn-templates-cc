@@ -1,0 +1,17 @@
+---
+metanorma:
+  source:
+    files:
+      - admin/document.adoc
+      - advisory/document.adoc
+      - amendment/document.adoc
+      - directive/document.adoc
+      - guide/document.adoc
+      - report/document.adoc
+      - specification/document.adoc
+      - standard/document.adoc
+      - technical-corrigendum/document.adoc
+
+  collection:
+    organization: "CalConnect: The Calendaring and Scheduling Consortium"
+    name: "CalConnect deliverable templates in Metanorma AsciiDoc"
