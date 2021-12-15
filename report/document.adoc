@@ -13,7 +13,6 @@
 :stem:
 :xrefstyle: short
 :imagesdir: images
-:docfile: cc-document.adoc
 :mn-document-class: csd
 :mn-output-extensions: xml,html,pdf
 :local-cache-only:
