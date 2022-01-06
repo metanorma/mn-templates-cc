@@ -1,7 +1,9 @@
 = CalConnect Metanorma Templates
 
-image:https://github.com/metanorma/mn-templates-csd/workflows/defaults/badge.svg["Build Status", link="https://github.com/metanorma/mn-templates-csd/actions?query=workflow%3Adefaults"]
-image:https://github.com/metanorma/mn-templates-csd/workflows/windows/badge.svg["Windows Build Status", link="https://github.com/metanorma/mn-templates-csd/actions?query=workflow%3Awindows"]
+image:https://github.com/metanorma/mn-templates-cc/workflows/test/badge.svg["Test Status", link="https://github.com/metanorma/mn-templates-cc/actions/workflows/test.yml"]
+image:https://github.com/metanorma/mn-templates-cc/workflows/pages/badge.svg["Pages Status", link="https://github.com/metanorma/mn-templates-cc/actions/workflows/pages.yml"]
+image:https://github.com/metanorma/mn-templates-cc/workflows/docker/badge.svg["Build Status", link="https://github.com/metanorma/mn-templates-cc/actions/workflows/docker.yml"]
+
 
 This GitHub repository contains templates for CalConnect Metanorma documents.
 
