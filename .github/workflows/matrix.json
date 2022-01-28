@@ -1,0 +1,15 @@
+{
+	"type": [ "csd" ],
+	"doctype": [
+		"admin",
+		"advisory",
+		"amendment",
+		"directive",
+		"guide",
+		"report",
+		"specification",
+		"standard",
+		"technical-corrigendum"
+	],
+	"experimental": [ false ]
+}
