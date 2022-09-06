@@ -1,0 +1,1439 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
+  <!--
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Source Sans Pro",sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Source Code Pro",monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Source Code Pro",monospace !important;
+  font-variant-ligatures: none; }
+
+p code, dt code, li code, label code, legend code, caption code, th code, td code,
+p tt, dt tt, li tt, label tt, legend tt, caption tt, th tt, td tt,
+p kbd, dt kbd, li kbd, label kbd, legend kbd, caption kbd, th kbd, td kbd,
+p samp, dt samp, li samp, label samp, legend samp, caption samp, th samp, td samp {
+  font-size: ; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro",sans-serif; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Source Sans Pro",sans-serif; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+.h2Annex {
+  font-family: "Source Sans Pro",sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+  dl dt p, dl dd p {
+    margin-top: 0; }
+  dl dt {
+    grid-column-start: 1; }
+  dl dd {
+    grid-column-start: 2; }
+
+b, strong {
+  font-weight: bold; }
+
+div.document-stage-band, div.document-type-band {
+  background-color: #333333; }
+
+a.FootnoteRef + a.FootnoteRef:before {
+  content: ", ";
+  vertical-align: super; }
+
+.addition {
+  color: blue; }
+
+.deletion {
+  color: red;
+  text-decoration: line-through; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Source Sans Pro",sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Source Code Pro",monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Source Code Pro",monospace !important;
+  font-variant-ligatures: none; }
+
+p code, dt code, li code, label code, legend code, caption code, th code, td code,
+p tt, dt tt, li tt, label tt, legend tt, caption tt, th tt, td tt,
+p kbd, dt kbd, li kbd, label kbd, legend kbd, caption kbd, th kbd, td kbd,
+p samp, dt samp, li samp, label samp, legend samp, caption samp, th samp, td samp {
+  font-size: ; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro",sans-serif; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Source Sans Pro",sans-serif; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+.h2Annex {
+  font-family: "Source Sans Pro",sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+  dl dt p, dl dd p {
+    margin-top: 0; }
+  dl dt {
+    grid-column-start: 1; }
+  dl dd {
+    grid-column-start: 2; }
+
+b, strong {
+  font-weight: bold; }
+
+div.document-stage-band, div.document-type-band {
+  background-color: #333333; }
+
+a.FootnoteRef + a.FootnoteRef:before {
+  content: ", ";
+  vertical-align: super; }
+
+.addition {
+  color: blue; }
+
+.deletion {
+  color: red;
+  text-decoration: line-through; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.wrapper-top {
+  background-color: #0e1a85;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Source Sans Pro",sans-serif; }
+
+.coverpage-maturity {
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Source Sans Pro",sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+  .coverpage-contributors .role {
+    font-variant-caps: all-small-caps;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 0.1em 0.5em;
+    margin-left: 1em;
+    color: #485094;
+    font-size: 0.9em;
+    font-weight: 900; }
+  .coverpage-contributors .person {
+    display: block;
+    font-weight: 300; }
+
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+  .coverpage-warning .title {
+    color: #f36f36;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+
+.copyright {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: left; }
+  .copyright .name, .copyright .address {
+    color: #485094; }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #1d1d1d;
+  background-color: #fff; }
+  body main {
+    margin: 0 3em 0 6em; }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 360px; } }
+
+@media print {
+  .container {
+    padding-left: 0; } }
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    background-color: #f7f7f7; } }
+
+@media print {
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; } }
+
+nav #toc {
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: 400; }
+  @media screen and (max-width: 768px) {
+    nav #toc {
+      padding: 0 1.5em;
+      overflow: visible; } }
+@media screen and (min-width: 768px) {
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+    #toggle span {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); } }
+
+@media screen and (max-width: 768px) {
+  #toggle {
+    display: none; } }
+
+@media print {
+  #toggle {
+    display: none; } }
+
+#toc ul, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #toc ul li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul li a {
+    padding: 5px 10px; }
+  #toc ul a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a {
+    color: #485094;
+    text-decoration: none;
+    display: block; }
+    #toc ul a:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a:hover {
+      box-shadow: none;
+      color: white; }
+
+#toc .h2, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h2 {
+  padding-left: 30px; }
+
+#toc .h3, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+  #toc .toc-active a, #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
+    color: white; }
+
+@media print {
+  #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a {
+    color: #485094; }
+  #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
+    color: black; } }
+
+#toc ul, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul {
+  margin-bottom: 0.25em; }
+
+#toc li, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li {
+  list-style-type: none; }
+  #toc li:before, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:before {
+    content: " " !important;
+    display: none; }
+
+#toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 100%; }
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .rule.toc {
+      display: none; } }
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+  .document-stage-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 300;
+    height: 160px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-stage-band {
+      display: none; } }
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 102; }
+  .document-type-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-type-band {
+      display: none; } }
+  .document-type-band .document-type {
+    top: 20px; }
+
+/* Typograpy */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1, .h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+  h1#content, #content.h1 {
+    margin-top: 2em; }
+
+h2, .h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+  h2 p, .h2 p {
+    display: inline; }
+
+h3, .h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Terms */
+.TermNum {
+  font-weight: 400; }
+
+.TermNum, .Terms, .AltTerms {
+  color: #485094; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/* Links, selection */
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d; }
+
+::selection,
+::-moz-selection {
+  background: #1d1d1d;
+  color: white; }
+
+/* Lists */
+ol {
+  margin-left: 1.2em; }
+
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
+
+ul > li:before {
+  content: "\2014";
+  position: absolute;
+  left: 0; }
+
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
+
+/* Bibliograhy */
+p.Biblio, p.NormRef {
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
+
+/* Blocks */
+.figure {
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto;
+  font-family: "Source Code Pro",monospace;
+  font-variant-ligatures: none; }
+  .figure .FigureTitle, .figure .figure-title {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .figure > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.SourceTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+pre {
+  font-family: "Source Code Pro",monospace;
+  font-variant-ligatures: none;
+  background-color: #f7f7f7;
+  font-size: ;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow-y: auto;
+  overflow-x: scroll; }
+  .example pre {
+    background: none; }
+
+.pseudocode {
+  background-color: #f7f7f7;
+  font-size: ;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+  .pseudocode .SourceTitle {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .example .pseudocode {
+    background: none; }
+
+.Admonition .AdmonitionTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.recommend .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.require .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.permission .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.ListTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  text-align: left; }
+
+.Note, .Admonition {
+  color: #47430c;
+  padding: 0.25em;
+  margin: 0; }
+
+.Note {
+  background-color: #fff495; }
+  .Note p {
+    margin: 1em; }
+
+.blockquote, .Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+  .blockquote .QuoteAttribution, .Quote .QuoteAttribution {
+    text-align: right; }
+
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/* Examples */
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: -1.5em; }
+
+.example pre, .example .pseudocode {
+  background: none; }
+
+/* Tables */
+table {
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+  table, table th, table td {
+    border: 1px solid black;
+    font-size: 0.95em; }
+  table th, table td {
+    padding: 1em; }
+  table td.header {
+    font-weigth: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/* Footnotes */
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/* Contact Info */
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 1em;
+  margin-top: 2em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+  .contact-info p, .contact-info a {
+    font-family: "Source Code Pro",monospace;
+    font-variant-ligatures: none;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 1em;
+    margin: 0; }
+  .contact-info a:hover {
+    color: #485094;
+    background: none;
+    text-decoration: underline;
+    box-shadow: none; }
+  .contact-info .name {
+    font-weight: 700; }
+
+/* Keywords */
+span.keyword {
+  font-weight: 600; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+  .Admonition p, .admonition p {
+    margin: 0; }
+
+#myBtn {
+  font-family: "Source Code Pro",monospace;
+  font-variant-ligatures: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+  #myBtn:hover {
+    opacity: 1; }
+  @media print {
+    #myBtn {
+      display: none; } }
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .h1, .title-section1 {
+    page-break-before: always; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><title>Calendar operator practices&#x2009;&#x2014;&#x2009;Guidelines to protect against calendar abuse</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { return "h1:not(:empty):not(.TermNum):not(.noTOC),h2:not(:empty):not(.TermNum):not(.noTOC)";}
+</script>
+
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet" />
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<style class="anchorjs"></style>
+</link></link></link></head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="published-band">
+  <p class="document-stage">Published</p>
+</div>
+
+<div class="document-type-band" id="amendment-band">
+  <p class="document-type">CalConnect Amendment</p>
+</div>
+
+<div id="toggle"> <span>&#x2022;</span> </div>
+
+<header>
+
+  <!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/Amd 18003:2019</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2019</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Calendar operator practices&#x2009;&#x2014;&#x2009;Guidelines to protect against calendar abuse</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC CALSPAM</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+        <div class="group author">
+          
+          
+          <span class="person author">Thomas Sch&#xE4;fer, 1&#x26;1 Mail&#x26;Media Development and Technology GmbH<span class="role">Author</span></span>
+          
+          <span class="person author">Jesse Thompson, University of Wisconsin-Madison<span class="role">Author</span></span>
+          
+          <div class="affiliation"></div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="amendment">CalConnect Amendment</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      
+
+      <div class="copyright">
+        <div class="year">
+          <div class="boilerplate-copyright">
+    <div>
+      <p id="_c5e6f338-2448-3bfd-669b-13932ef59d3a">&#xA9; 2019 The Calendaring and Scheduling Consortium, Inc. </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="message">
+          <div class="boilerplate-legal">
+    <div>
+      <p id="_06be29cd-a8ec-f7e9-c247-d34f46e236ac">All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.  </p>
+    </div>
+  </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="boilerplate-feedback">
+    <div>
+      <p id="boilerplate-name">The Calendaring and Scheduling Consortium, Inc.</p>
+      <p id="boilerplate-address">4390 Chaffin Lane<br />
+        McKinleyville<br />
+        California 95519<br />
+        United States of America<br />
+        <br />
+        <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+        <a href="www.calconnect.org">www.calconnect.org</a>
+      </p>
+    </div>
+  </div>
+        </div>
+      </div>
+
+      <div class="rule"></div>
+    </div>
+  </div>
+</header>
+
+      
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"><ul><li class="h1"><a href="#toc0">      Foreword</a></li><li class="h1"><a href="#toc1">      Introduction</a></li><li class="h2"><a href="#toc2">      Rise of calendar spam</a></li><li class="h1"><a href="#toc3">      1.&#xA0; Scope</a></li><li class="h1"><a href="#toc4">      2.&#xA0; Normative references</a></li><li class="h1"><a href="#toc5">      3.&#xA0; Terms, definitions and abbreviated terms</a></li><li class="h2"><a href="#toc6">      3.1.&#xA0; Terms and definitions</a></li><li class="h2"><a href="#toc7">      3.2.&#xA0; Abbreviated terms</a></li><li class="h1"><a href="#toc8">      4.&#xA0; Main content</a></li><li class="h1"><a href="#toc9">      Appendix A (informative) Annex One</a></li><li class="h1"><a href="#toc10">      Appendix B (normative) Annex Two</a></li></ul></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="authority">
+  
+
+
+
+  
+
+  
+</div>
+      <br />
+      <div id="_d8697374-08ae-0989-687c-91b2ad6cecc4">
+        <h1 class="ForewordTitle" id="toc0">Foreword</h1>
+        <p id="_d2622456-fd36-b5c0-55d0-254744d992be">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
+organization with the aim of facilitating interoperability of technologies across
+user-centric systems and applications.</p>
+        <p id="_b7038329-cbc0-3387-173b-1812275fbc7b">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+        <p id="_ba101e0c-2260-6bf2-3cef-7a32732a5c71">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives, and in this case, also aligned
+with the procedures used at M3AAWG.</p>
+        <p id="_00732f9e-1ba1-2320-a60f-5fb415c2287a">In particular the different approval criteria needed for the different types of
+CalConnect documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+        <p id="_181d70f9-02df-8acf-c1f7-9fdad0424484">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+        <p id="_40998d9d-3b18-aa53-831b-b4abf8e56699">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+        <p id="_0263d69d-80dd-88a8-c337-b643a313b44a">This document was prepared by Technical Committee <i>CALSPAM</i>.</p>
+      </div>
+      <br />
+      <div class="Section3" id="_introduction">
+        <h1 class="IntroTitle" id="toc1">Introduction</h1>
+        <div id="_rise_of_calendar_spam"><h2 id="toc2">Rise of calendar spam</h2>
+
+<p id="_cfccafe4-532f-7e93-c7fe-7bdd296bf3f7">&#x201C;Calendar spam&#x201D;&#x2009;&#x2014;&#x2009;unsolicited, or otherwise unwanted, calendar events and meeting
+invitations&#x2009;&#x2014;&#x2009;is a recently exploited channel for abuse aimed at users of
+calendaring &#x26; scheduling systems.</p>
+
+<p id="_1ebcfa02-b756-79cf-a95e-7217741e9133">It is a new form of application-specific spam which takes advantage of the application
+layer across multiple technologies that spans scheduling, calendaring and messaging
+systems.</p>
+
+<p id="_c6ed3f1c-374c-a2d8-e52c-758d98d44190">As is the case with email spam, calendar spam is not only used to deliver unwanted
+information, but can also be used for malicious purposes such as phishing attempts
+and delivering dangerous payloads.</p>
+
+<p id="_611bd6b8-e5b7-6399-54fc-5f6a650c87ab">Because calendar events and meeting invitations are often (but not exclusively)
+transported and delivered via email, combatting calendar spam requires awareness,
+intervention and integration with email systems and services.</p>
+</div>
+      </div>
+      <p class="zzSTDTitle1">Calendar operator practices&#x2009;&#x2014;&#x2009;Guidelines to protect against calendar abuse</p>
+      <div id="_scope">
+        <h1 id="toc3">1.&#xA0; Scope</h1>
+        <p id="_cb122088-626f-2178-93dc-552e37a43852">This document specifies guidelines for calendar and mail system operators to:</p>
+        <ul id="_d213047e-bf99-b974-8213-856989fa9388"><li><p id="_63a3db10-c1d3-4a54-8673-8c05dc347117">detect the occurrence of calendar abuse;</p>
+</li>
+<li><p id="_4e5ed150-b815-7c4d-ed62-bbfbbac97da2">consider processes and procedures to mitigate calendar abuse; and</p>
+</li>
+<li><p id="_6e5dc1da-21d2-58ad-d000-e772fbb2cac7">suggest acceptable (non-abusive) practices with calendar usage.</p>
+</li>
+</ul>
+      </div>
+      <div><h1 id="toc4">2.&#xA0; Normative references</h1>
+<p id="_5d2831ef-d521-5399-7579-31a44aa5589e">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+ <p id="iMIP" class="NormRef">IETF RFC 6047, A. MELNIKOV (ed.). <i>iCalendar Message-Based Interoperability Protocol (iMIP)</i>. In: RFC. December 2010. <a href="https://www.rfc-editor.org/info/rfc6047">https://www.rfc-editor.org/info/rfc6047</a>.</p>
+ <p id="iTIP" class="NormRef">IETF RFC 5546, C. DABOO (ed.). <i>iCalendar Transport-Independent Interoperability Protocol (iTIP)</i>. In: RFC. December 2009. <a href="https://www.rfc-editor.org/info/rfc5546">https://www.rfc-editor.org/info/rfc5546</a>.</p>
+</div>
+      <div id="terms">
+        <h1 id="toc5">3.&#xA0; Terms, definitions and abbreviated terms</h1>
+        <p id="_248e116d-b0d6-fd07-dcb6-5e93af87a0c0">For the purposes of this document,
+    the following terms and definitions apply.</p>
+        <div id="_terms_and_definitions"><h2 id="toc6">3.1.&#xA0; Terms and definitions</h2>
+
+<p class="Terms" style="text-align:left;" id="term-calendar-spam"><strong>3.1.1.</strong>&#xA0;<b>calendar spam</b></p>
+<p id="_222a46af-ce4b-1c79-8cc1-9143a749a0ea">calendar events and meeting invitations containing <i>spam</i> [term defined in <a href="#term-spam">Clause 3.1.3</a>] delivered
+through <b>term <tt>calendar systems</tt>, display <tt>calendar system</tt> not resolved via ID <tt>calendar-systems</tt></b></p>
+
+
+<p class="Terms" style="text-align:left;" id="term-calendar-abuse"><strong>3.1.2.</strong>&#xA0;<b>calendar abuse</b></p>
+<p id="_514d7b23-97ff-b751-d806-a0be56e8bb6f">malicious usage of a <i>calendar system</i> [term defined in <a href="#term-calendar-system">Clause 3.1.5</a>],
+possibly leading to an <i>attack</i> [term defined in <a href="#term-attack">Clause 3.1.4</a>]
+on the receiving user</p>
+
+
+<p class="Terms" style="text-align:left;" id="term-spam"><strong>3.1.3.</strong>&#xA0;<b>spam</b></p>
+<p id="_6f560ea7-d9f3-f804-218d-ebe38e7fc840">unsolicited or unwanted information</p>
+
+
+<p class="Terms" style="text-align:left;" id="term-attack"><strong>3.1.4.</strong>&#xA0;<b>attack</b></p>
+<p id="_0b495eec-04fa-ae77-9de4-94616021d38f">attempt to destroy, expose, alter, disable, steal or gain unauthorized
+access to or make unauthorized use of an asset</p>
+
+
+ <p>[SOURCE: ]</p>
+
+<p class="Terms" style="text-align:left;" id="term-calendar-system"><strong>3.1.5.</strong>&#xA0;<b>calendar system</b></p>
+<p id="_28269927-6cc4-31c9-0f83-f034d75b9b93">information system that provides calendar and scheduling functionality for user
+accounts</p>
+
+
+<p class="Terms" style="text-align:left;" id="term-mail-system"><strong>3.1.6.</strong>&#xA0;<b>mail system</b></p>
+<p id="_96f7e802-24af-5aee-9cf2-44a2b8c1b1df">information system that provides electronic mail functionality</p>
+
+
+<p class="Terms" style="text-align:left;" id="term-user-system"><strong>3.1.7.</strong>&#xA0;<b>user system</b></p>
+<p id="_b2985734-aa4b-6fe6-201b-d974f0c9e1cc">information system that provides authentication and authorization functionality</p>
+
+</div>
+        <div id="abbrev"><h2 id="toc7">3.2.&#xA0; Abbreviated terms</h2>
+
+<dl id="_2dc5a2dc-554c-6ce8-2a06-f3e922478c52"><dt id="symbol-ARF"><p>ARF</p></dt><dd><p id="_ca27cb74-e102-14e7-1544-68fe96172e10">Abuse Reporting Format</p>
+</dd><dt id="symbol-DNSBL"><p>DNSBL</p></dt><dd><p id="_a761f2b3-1556-404e-345f-164efb2e29ef">Domain Name System-based Blackhole List</p>
+</dd><dt id="symbol-iMIP"><p>iMIP</p></dt><dd><p id="_85d777b6-a23d-e95b-e4f1-c68a9c7dc38d">iCalendar Message-Based Interoperability Protocol (see <a href="#iMIP">IETF RFC 6047</a>)</p>
+</dd><dt id="symbol-iTIP"><p>iTIP</p></dt><dd><p id="_f2e11a1f-15a4-9c3e-ba33-2fd73e654cfe">iCalendar Transport-Independent Interoperability Protocol (see <a href="#iTIP">IETF RFC 5546</a>)</p>
+</dd><dt id="symbol-SMTP"><p>SMTP</p></dt><dd><p id="_e2b75348-8257-43dd-a5dc-0e06b021fdfa">Simple Mail Transfer Protocol (see <a href="#SMTP">[SMTP]</a>)</p>
+</dd><dt id="symbol-URIBL"><p>URIBL</p></dt><dd><p id="_e77795f1-f7d0-0984-f13b-6e6494ffcd28">Realtime URI Blacklist</p>
+</dd></dl>
+</div>
+      </div>
+      <div id="content">
+        <h1 id="toc8">4.&#xA0; Main content</h1>
+        <p id="_7f514d06-5092-d760-cf42-9a19b962392e">Here&#x2019;s where you place your main content.</p>
+      </div>
+      <br />
+      <div id="annex-1" class="Section3">
+        <h1 class="Annex" id="toc9"><b>Appendix A</b><br />(informative)<br /><b>Annex One</b></h1>
+        <p id="_73987939-9882-0858-f9c0-7f041dd0b00e">This is an informative annex.</p>
+      </div>
+      <br />
+      <div id="annex-2" class="Section3">
+        <h1 class="Annex" id="toc10"><b>Appendix B</b><br />(normative)<br /><b>Annex Two</b></h1>
+        <p id="_bced0850-0c85-7004-c270-6591d75cd8de">This is an informative annex.</p>
+      </div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { preferredFont: "STIX" },
+    asciimath2jax: { delimiters: [['(#(', ')#)']] }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML-full" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
+    $("#toc").on('click', 'li', function(e) {
+    $(this).parent().find('li.toc-active').removeClass('toc-active');
+    $(this).addClass('toc-active');
+});
+  </script>
+  
+  <script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+//
+// AnchorJS - v4.2.2 - 2020-04-20
+// https://www.bryanbraun.com/anchorjs/
+// Copyright (c) 2020 Bryan Braun; Licensed MIT
+//
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function f(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.base=A.hasOwnProperty("base")?A.base:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64,A.titleText=A.hasOwnProperty("titleText")?A.titleText:""}function p(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}this.options=A||{},this.elements=[],f(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var e,t,i,n,o,s,a,r,c,h,l,u,d=[];if(f(this.options),"touch"===(l=this.options.visible)&&(l=this.isTouchDevice()?"always":"hover"),0===(e=p(A=A||"h2, h3, h4, h5, h6")).length)return this;for(!function(){if(null!==document.head.querySelector("style.anchorjs"))return;var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"],style'))?document.head.appendChild(e):document.head.insertBefore(e,A);e.sheet.insertRule(".anchorjs-link{opacity:0;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}",e.sheet.cssRules.length),e.sheet.insertRule(":hover>.anchorjs-link,.anchorjs-link:focus{opacity:1}",e.sheet.cssRules.length),e.sheet.insertRule("[data-anchorjs-icon]::after{content:attr(data-anchorjs-icon)}",e.sheet.cssRules.length),e.sheet.insertRule('@font-face{font-family:anchorjs-icons;src:url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype")}',e.sheet.cssRules.length)}(),t=document.querySelectorAll("[id]"),i=[].map.call(t,function(A){return A.id}),o=0;o<e.length;o++)if(this.hasAnchorJSLink(e[o]))d.push(o);else{if(e[o].hasAttribute("id"))n=e[o].getAttribute("id");else if(e[o].hasAttribute("data-anchor-id"))n=e[o].getAttribute("data-anchor-id");else{for(c=r=this.urlify(e[o].textContent),a=0;void 0!==s&&(c=r+"-"+a),a+=1,-1!==(s=i.indexOf(c)););s=void 0,i.push(c),e[o].setAttribute("id",c),n=c}(h=document.createElement("a")).className="anchorjs-link "+this.options.class,h.setAttribute("aria-label",this.options.ariaLabel),h.setAttribute("data-anchorjs-icon",this.options.icon),this.options.titleText&&(h.title=this.options.titleText),u=document.querySelector("base")?window.location.pathname+window.location.search:"",u=this.options.base||u,h.href=u+"#"+n,"always"===l&&(h.style.opacity="1"),""===this.options.icon&&(h.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(h.style.lineHeight="inherit")),"left"===this.options.placement?(h.style.position="absolute",h.style.marginLeft="-1em",h.style.paddingRight="0.5em",e[o].insertBefore(h,e[o].firstChild)):(h.style.paddingLeft="0.375em",e[o].appendChild(h))}for(o=0;o<d.length;o++)e.splice(d[o]-o,1);return this.elements=this.elements.concat(e),this},this.remove=function(A){for(var e,t,i=p(A),n=0;n<i.length;n++)(t=i[n].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(i[n]))&&this.elements.splice(e,1),i[n].removeChild(t));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){return this.options.truncate||f(this.options),A.trim().replace(/\'/gi,"").replace(/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\\n\t\b\v]/g,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&-1<(" "+A.firstChild.className+" ").indexOf(" anchorjs-link "),t=A.lastChild&&-1<(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ");return e||t||!1}}});
+// @license-end
+  </script>
+  <script>
+/*
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+*/
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script>
+
+</body>
+</html>

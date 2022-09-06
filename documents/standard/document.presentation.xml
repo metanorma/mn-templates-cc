@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csd-standard xmlns="https://www.metanorma.org/ns/csd" type="presentation" version="2.1.7">
+<bibdata type="standard">
+<title language="en" format="text/plain">Date and time — Standard template</title>
+<docidentifier type="CalConnect">CC 19999:2019</docidentifier><docnumber>19999</docnumber><contributor><role type="author"/><organization>
+<name>CalConnect</name>
+</organization></contributor><contributor><role type="author"/><person>
+<name><completename>Josiah Carberry, Brown University</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>CalConnect</name>
+</organization></contributor><edition language="">1</edition><edition language="en">first edition</edition><version><revision-date>2019-09-10T00:00:00Z</revision-date></version><language current="true">en</language><script current="true">Latn</script><status><stage>proposal</stage></status><copyright><from>2019</from><owner><organization>
+<name>CalConnect</name>
+</organization></owner></copyright><ext><doctype>standard</doctype><editorialgroup><committee>VCARD</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Foreword</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Appendix</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+</localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>For the purposes of this document, 
+    the following terms and definitions apply.</p>
+</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en"><p>For the purposes of this document, 
+  the terms and definitions given in % apply.</p>
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>For the purposes of this document, the terms and definitions 
+  given in % and the following apply.</p>
+</localized-string><localized-string key="term_defined_in" language="en">[term defined in %]</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">EXAMPLE</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">%Spellout edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="subject" language="en">Subject</localized-string><localized-string key="inherits" language="en">Inherits</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings>
+<termdocsource bibitemid="CC18011"/><boilerplate>
+  <copyright-statement>
+    <clause>
+      <p id="_c5e6f338-2448-3bfd-669b-13932ef59d3a">© 2019 The Calendaring and Scheduling Consortium, Inc. </p>
+    </clause>
+  </copyright-statement>
+
+  
+  <license-statement>
+    <clause>
+    <title depth="1">Warning for Drafts</title>
+      <p id="_3ca8ab68-d28d-d16a-d1ca-b72167d336aa">This document is not a CalConnect Standard. It is distributed for review and
+        comment, and is subject to change without notice and may not be referred to as
+        a Standard. Recipients of this draft are invited to submit, with their
+        comments, notification of any relevant patent rights of which they are aware
+        and to provide supporting documentation.
+      </p>
+    </clause>
+  </license-statement>
+  
+
+  <legal-statement>
+    <clause>
+      <p id="_06be29cd-a8ec-f7e9-c247-d34f46e236ac">All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.  </p>
+    </clause>
+  </legal-statement>
+
+  <feedback-statement>
+    <clause>
+      <p id="boilerplate-name">The Calendaring and Scheduling Consortium, Inc.</p>
+      <p id="boilerplate-address">4390 Chaffin Lane<br/>
+        McKinleyville<br/>
+        California 95519<br/>
+        United States of America<br/>
+        <br/>
+        <link target="mailto:copyright@calconnect.org">copyright@calconnect.org</link><br/>
+        <link target="www.calconnect.org">www.calconnect.org</link>
+      </p>
+    </clause>
+  </feedback-statement>
+</boilerplate>
+
+<preface><foreword id="_30a8a6dd-831f-fbc9-4cd7-68c5e8871aec" obligation="informative" displayorder="1">
+<title>Foreword</title>
+<p id="_f5c9b7e5-74a0-c39e-25cb-1fb4eb7cbd1f">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit
+organization with the aim to facilitate interoperability of technologies across
+user-centric systems and applications.</p>
+
+<p id="_b7038329-cbc0-3387-173b-1812275fbc7b">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+
+<p id="_9f9a6602-242d-9d30-ce29-341ab439c453">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives.</p>
+
+<p id="_00732f9e-1ba1-2320-a60f-5fb415c2287a">In particular the different approval criteria needed for the different types of
+CalConnect documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+
+<p id="_181d70f9-02df-8acf-c1f7-9fdad0424484">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+
+<p id="_40998d9d-3b18-aa53-831b-b4abf8e56699">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+
+<p id="_66c2c087-dca3-a04a-ca6e-acbe3173ac0f">This document was prepared by Technical Committee <em>VCARD</em>.</p>
+</foreword><introduction id="introduction" obligation="informative" displayorder="2">
+<title>Introduction</title>
+<p id="_f9fbbc45-597c-d887-62c8-48aff954541f">Introduction goes here.</p>
+</introduction></preface><sections>
+
+<clause id="scope" type="scope" obligation="normative" displayorder="3">
+<title depth="1">1.<tab/>Scope</title>
+<p id="_200559b2-ca9f-f4a4-8b18-6ff1ff2836e9">Scope.</p>
+</clause>
+
+
+
+<clause id="tda" obligation="normative" displayorder="5">
+<title depth="1">3.<tab/>Terms, definitions, symbols and abbreviated terms</title><p id="_21c598d7-fb2f-daf4-58ec-fdbc24f59246">For the purposes of this document, the terms and definitions 
+  given in <eref bibitemid="CC18011">CC 18011:2018</eref> and the following apply.</p>
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title depth="2">3.1.<tab/>Terms and definitions</title>
+<term id="term-repeat-rule"><name>3.1.1.</name><preferred><strong>repeat rule</strong></preferred>
+<definition><p id="_7d2aaf00-26a6-8f58-dfc1-5b3061251ca2">consists of a set of eligible time intervals (<xref target="term-eti">[term-eti]</xref>) and
+selection rules (<xref target="term-sel-rule">Clause 3.1.2</xref>) that allows computation of a set of
+matching instants (<xref target="term-matching-instants">[term-matching-instants]</xref>)</p></definition>
+ </term>
+
+<term id="term-sel-rule"><name>3.1.2.</name><preferred><strong>selection rule</strong></preferred>
+<definition><p id="_44a36d56-f59f-8a33-1c67-54888b805030">rule specifying restrictions on the value of a <em>time scale component</em>
+(<eref type="inline" bibitemid="ISO8601-1" citeas="ISO 8601-1"><localityStack><locality type="clause"><referenceFrom>3.1.3.9</referenceFrom></locality></localityStack>ISO 8601-1,  Clause 3.1.3.9</eref>)</p></definition>
+ </term>
+</terms>
+
+<definitions id="symbols" type="symbols" obligation="normative">
+<title depth="2">3.2.<tab/>Symbols</title>
+<definitions id="symbols-general" obligation="normative">
+<title depth="3">3.2.1.<tab/>Symbols and abbreviated terms</title>
+<p id="_1775df12-2ceb-e410-b33b-4e677c18c2ab">Representations specified in this document make use of symbols given in <eref type="inline" bibitemid="CC18011" citeas="CC 18011:2018">CC 18011:2018</eref> and the following.</p>
+</definitions>
+<definitions id="symbols-composite" obligation="normative">
+<title depth="3">3.2.2.<tab/>Symbols and abbreviated terms</title>
+<dl id="_44f91f5f-d499-a5e9-7a83-c450a74d5c0f"><dt id="symbol-selection">selection</dt><dd><p id="_b081e9dd-6d10-b23d-c747-6f02556e5f04">representation for a set of selection rules as determined in <xref target="selection-general">[selection-general]</xref></p>
+</dd></dl>
+</definitions>
+<definitions id="symbols-inplace" obligation="normative">
+<title depth="3">3.2.3.<tab/>Symbols and abbreviated terms</title>
+<p id="_95eace98-411f-844d-d050-9e1872ad4834">These symbols are used to represent characters in the date and time
+representations. They are used in representations only, and are
+replaced by one or more characters, as described, in expressions:</p>
+
+<dl id="_e8c8616f-33ba-288a-35be-e110420b60b8"><dt id="symbol-_">!</dt><dd><p id="_7c0ce859-da11-1df1-3e75-fe8d1ac3f464">indicates that the token following this symbol is optional (may be omitted)</p>
+</dd>
+<dt id="symbol-i">i</dt><dd><p id="_416bb8bf-f6bf-926a-cf8c-859f6f029947">a positive integer</p>
+</dd>
+<dt id="symbol-n">n</dt><dd><p id="_32a86339-7126-dc99-2001-2b0bfba013a5">a positive integer or value, may be left absent to signify an unbounded value</p>
+</dd></dl>
+</definitions></definitions></clause>
+
+<clause id="content" obligation="normative" displayorder="6">
+<title depth="1">4.<tab/>Content</title>
+<p id="_95111d81-6052-9fbd-46ee-2a3adec6dbb7">More content.</p>
+</clause>
+
+
+
+
+</sections><annex id="annexa" obligation="informative" displayorder="7">
+<title><strong>Appendix A</strong><br/>(informative)<br/><strong>An informative annex</strong></title>
+<p id="_b86e8504-32d9-13a1-d5da-6c93f03854df">Annex content.</p>
+</annex><bibliography><references id="_normative_references" normative="true" obligation="informative" displayorder="4">
+<title depth="1">2.<tab/>Normative references</title><p id="_7700c9c2-af66-2724-095b-c09172f235dc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+ <bibitem id="CC18011" type="standard"><formattedref>CalConnect. <em>Date and time — Explicit representation</em>. 1st edition. September 18, 2018. <link target="https://standards.calconnect.org/csd/cc-18011.xml">https://standards.calconnect.org/csd/cc-18011.xml</link>.</formattedref><uri type="xml">https://standards.calconnect.org/csd/cc-18011.xml</uri><uri type="pdf">https://standards.calconnect.org/csd/cc-18011.pdf</uri><uri type="doc">https://standards.calconnect.org/csd/cc-18011.doc</uri><uri type="html">https://standards.calconnect.org/csd/cc-18011.html</uri><uri type="rxl">https://standards.calconnect.org/csd/cc-18011.rxl</uri><docidentifier type="csd" primary="true">CC 18011:2018</docidentifier></bibitem>
+ <bibitem id="ISO8601-1" type="standard"><formattedref>International Organization for Standardization. <em>Date and time — Representations for information interchange — Part 1: Basic rules</em>. 1st edition. Geneva. <link target="https://www.iso.org/standard/70907.html">https://www.iso.org/standard/70907.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/70907.html</uri><uri type="obp">https://www.iso.org/obp/ui/#!iso:std:70907:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/07/09/70907.detail.rss</uri><docidentifier type="ISO" primary="true">ISO 8601-1</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:8601:-1:stage-60.60:ed-1</docidentifier></bibitem>
+</references><references id="_bibliography" normative="false" obligation="informative" displayorder="8">
+<title depth="1">Bibliography</title><bibitem id="ISOIEC646" type="standard"><formattedref>International Organization for Standardization and International Electrotechnical Commission. <em>Information technology — ISO 7-bit coded character set for information interchange</em>. 3rd edition. Geneva. <link target="https://www.iso.org/standard/4777.html">https://www.iso.org/standard/4777.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/4777.html</uri><uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri><docidentifier type="metanorma-ordinal">[1]</docidentifier><docidentifier type="ISO" primary="true">ISO/IEC 646</docidentifier><docidentifier type="URN">URN urn:iso:std:iso-iec:646:stage-90.93:ed-3</docidentifier></bibitem><bibitem id="RFC5545" type="standard"><formattedref>B. DESRUISSEAUX (ed.). <em>Internet Calendaring and Scheduling Core Object Specification (iCalendar)</em>. In: RFC. September 2009. <link target="https://www.rfc-editor.org/info/rfc5545">https://www.rfc-editor.org/info/rfc5545</link>.</formattedref><uri type="src">https://www.rfc-editor.org/info/rfc5545</uri><docidentifier type="metanorma-ordinal">[2]</docidentifier><docidentifier type="IETF" primary="true">IETF RFC 5545</docidentifier><docidentifier type="DOI">DOI 10.17487/RFC5545</docidentifier></bibitem>
+ 
+ 
+</references></bibliography>
+</csd-standard>

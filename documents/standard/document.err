@@ -1,0 +1,43 @@
+/__w/mn-templates-cc/mn-templates-cc/site/documents/standard/document.err errors
+
+
+== Anchors
+
+(XML Line 000001): Crossreference target term-eti is undefined
+	<xref target="term-eti"/>
+(XML Line 000001): Crossreference target selection-general is undefined
+	<xref target="selection-general"/>
+(XML Line 000003): Crossreference target term-matching-instants is undefined
+	<xref target="term-matching-instants"/>
+
+
+== Style
+
+(XML Line 000116): Only one Symbols and Abbreviated Terms section in the standard
+	<definitions id="symbols" type="symbols" obligation="normative">
+	<title>Symbols</title>
+	<definitions id="symbols-general" obligation="normative">
+	<title>Symbols and abbreviated terms</title>
+	<p id="_1775df12-2ceb-e410-b33b-4e677c18c2ab">Representations specified in this document make use of symbols given in <eref type="inline" bibitemid="CC18011" citeas="CC 18011:2018"/> and the following.</p>
+(XML Line 000116): Symbols and Abbreviated Terms can only contain a definition list
+	<definitions id="symbols" type="symbols" obligation="normative">
+	<title>Symbols</title>
+	<definitions id="symbols-general" obligation="normative">
+	<title>Symbols and abbreviated terms</title>
+	<p id="_1775df12-2ceb-e410-b33b-4e677c18c2ab">Representations specified in this document make use of symbols given in <eref type="inline" bibitemid="CC18011" citeas="CC 18011:2018"/> and the following.</p>
+
+
+== Document Attributes
+
+(): proposal is not a recognised status
+
+
+== Metanorma XML Syntax
+
+(XML Line 000011:110): character content of element "revision-date" invalid; must be a string matching the regular expression "([\+\-]?\d{4})((-?)((0[1-9]|1[0-2])((-?)([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6]))))?"
+(XML Line 000101:39): element "eref" missing required attributes "citeas" and "type"
+(XML Line 000125:58): element "definitions" not allowed here; expected element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000128:15): element "definitions" incomplete; missing required element "dl"
+(XML Line 000129:60): element "definitions" not allowed here; expected element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000134:58): element "definitions" not allowed here; expected element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc", "ul" or "variant-title"
+(XML Line 000146:29): element "definitions" incomplete; missing required element "dl"

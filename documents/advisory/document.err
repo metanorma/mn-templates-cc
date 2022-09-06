@@ -1,0 +1,12 @@
+/__w/mn-templates-cc/mn-templates-cc/site/documents/advisory/document.err errors
+
+
+== Document Attributes
+
+(): proposal is not a recognised status
+
+
+== Metanorma XML Syntax
+
+(XML Line 000058:11): element "sections" not allowed yet; missing required element "preface"
+(XML Line 000095:28): element "docidentifier" not allowed yet; missing required element "title"

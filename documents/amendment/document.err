@@ -1,0 +1,37 @@
+/__w/mn-templates-cc/mn-templates-cc/site/documents/amendment/document.err errors
+
+
+== Crossreferences
+
+(XML Line 000136): ISO27000 does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="ISO27000" type="inline" citeas=""/>
+
+
+== AsciiDoc Input
+
+(XML Line 000110): Error: Term reference to `calendar-systems` missing:                 "calendar-systems" is not defined in document
+	<termxref>calendar systems</termxref>
+
+
+== Anchors
+
+(XML Line 000009): Crossreference target SMTP is undefined
+	<xref target="SMTP"/>
+
+
+== Style
+
+(): Final section must be (references) Bibliography
+(XML Line 000162): Symbols and Abbreviated Terms can only contain a definition list
+	<definitions id="abbrev" type="abbreviated_terms" obligation="normative">
+	<title>Abbreviated terms</title>
+	<dl id="_2dc5a2dc-554c-6ce8-2a06-f3e922478c52"><dt id="symbol-ARF">ARF</dt><dd><p id="_ca27cb74-e102-14e7-1544-68fe96172e10">Abuse Reporting Format</p>
+	</dd>
+	<dt id="symbol-DNSBL">DNSBL</dt><dd><p id="_a761f2b3-1556-404e-345f-164efb2e29ef">Domain Name System-based Blackhole List</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000126:155): element "concept" incomplete; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 000126:26): element "strong" not allowed here; expected element "eref", "refterm", "renderterm", "termref" or "xref"
+(XML Line 000153:108): IDREF "ISO27000" without matching ID

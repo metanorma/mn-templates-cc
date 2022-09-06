@@ -1,0 +1,40 @@
+/__w/mn-templates-cc/mn-templates-cc/site/documents/admin/document.err errors
+
+
+== Style
+
+(): Document must contain at least one clause
+(): Document must contain clause after Terms and Definitions
+(): Only annexes and references can follow clauses
+(): Document must include (references) Normative References
+(): Final section must be (references) Bibliography
+
+
+== Document Attributes
+
+(): proposal is not a recognised status
+
+
+== Metanorma XML Syntax
+
+(XML Line 000005:145): character content of element "on" invalid; must be a string matching the regular expression "([\+\-]?\d{4})((-?)((0[1-9]|1[0-2])((-?)([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6]))))?"
+(XML Line 000009:110): character content of element "revision-date" invalid; must be a string matching the regular expression "([\+\-]?\d{4})((-?)((0[1-9]|1[0-2])((-?)([12]\d|0[1-9]|3[01]))?|W([0-4]\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\d|[12]\d{2}|3([0-5]\d|6[1-6]))))?"
+(XML Line 000058:11): element "sections" not allowed yet; missing required element "preface"
+(XML Line 000058:57): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000062:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000065:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000068:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000072:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000079:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000082:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000084:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000086:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000088:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000090:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000092:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000094:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000096:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000098:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000100:47): element "p" not allowed here; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000101:12): element "sections" incomplete; expected element "clause", "definitions", "floating-title" or "terms"
+(XML Line 000102:16): element "csd-standard" incomplete; missing required element "bibliography"

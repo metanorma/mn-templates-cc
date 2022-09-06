@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csd-standard xmlns="https://www.metanorma.org/ns/csd" type="semantic" version="2.1.7">
+<bibdata type="standard">
+<title language="en" format="text/plain">Calendar operator practices — Report template</title>
+<docidentifier type="CalConnect">CC/R 19999:2019</docidentifier><docnumber>19999</docnumber><date type="published"><on>2019-09-10</on></date><contributor><role type="author"/><organization>
+<name>CalConnect</name>
+</organization></contributor><contributor><role type="author"/><person>
+<name><completename>Josiah Carberry, Brown University</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>CalConnect</name>
+</organization></contributor><edition>1</edition><version><revision-date>2019-09-10</revision-date></version><language>en</language><script>Latn</script><status><stage>proposal</stage></status><copyright><from>2019</from><owner><organization>
+<name>CalConnect</name>
+</organization></owner></copyright><ext><doctype abbreviation="R">report</doctype><editorialgroup><committee>CALSPAM</committee></editorialgroup></ext></bibdata>
+<termdocsource bibitemid="CC18011"/><boilerplate>
+  <copyright-statement>
+    <clause>
+      <p id="_c5e6f338-2448-3bfd-669b-13932ef59d3a">© 2019 The Calendaring and Scheduling Consortium, Inc. </p>
+    </clause>
+  </copyright-statement>
+
+  
+  <license-statement>
+    <clause>
+    <title>Warning for Drafts</title>
+      <p id="_3ca8ab68-d28d-d16a-d1ca-b72167d336aa">This document is not a CalConnect Standard. It is distributed for review and
+        comment, and is subject to change without notice and may not be referred to as
+        a Standard. Recipients of this draft are invited to submit, with their
+        comments, notification of any relevant patent rights of which they are aware
+        and to provide supporting documentation.
+      </p>
+    </clause>
+  </license-statement>
+  
+
+  <legal-statement>
+    <clause>
+      <p id="_06be29cd-a8ec-f7e9-c247-d34f46e236ac">All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.  </p>
+    </clause>
+  </legal-statement>
+
+  <feedback-statement>
+    <clause>
+      <p id="boilerplate-name">The Calendaring and Scheduling Consortium, Inc.</p>
+      <p id="boilerplate-address">4390 Chaffin Lane<br/>
+        McKinleyville<br/>
+        California 95519<br/>
+        United States of America<br/>
+        <br/>
+        <link target="mailto:copyright@calconnect.org">copyright@calconnect.org</link><br/>
+        <link target="www.calconnect.org">www.calconnect.org</link>
+      </p>
+    </clause>
+  </feedback-statement>
+</boilerplate>
+
+<preface><foreword id="_1c886c21-b530-75ad-1305-8c1916a469bc" obligation="informative">
+<title>Foreword</title>
+<p id="_f5c9b7e5-74a0-c39e-25cb-1fb4eb7cbd1f">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit
+organization with the aim to facilitate interoperability of technologies across
+user-centric systems and applications.</p>
+
+<p id="_b7038329-cbc0-3387-173b-1812275fbc7b">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+
+<p id="_9f9a6602-242d-9d30-ce29-341ab439c453">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives.</p>
+
+<p id="_00732f9e-1ba1-2320-a60f-5fb415c2287a">In particular the different approval criteria needed for the different types of
+CalConnect documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+
+<p id="_181d70f9-02df-8acf-c1f7-9fdad0424484">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+
+<p id="_40998d9d-3b18-aa53-831b-b4abf8e56699">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+
+<p id="_0263d69d-80dd-88a8-c337-b643a313b44a">This document was prepared by Technical Committee <em>CALSPAM</em>.</p>
+</foreword><introduction id="introduction" obligation="informative">
+<title>Introduction</title>
+<p id="_f9fbbc45-597c-d887-62c8-48aff954541f">Introduction goes here.</p>
+</introduction></preface><sections>
+
+<clause id="scope" type="scope" obligation="normative">
+<title>Scope</title>
+<p id="_200559b2-ca9f-f4a4-8b18-6ff1ff2836e9">Scope.</p>
+</clause>
+
+
+
+<clause id="tda" obligation="normative">
+<title>Terms, definitions, symbols and abbreviated terms</title><p id="_21c598d7-fb2f-daf4-58ec-fdbc24f59246">For the purposes of this document, the terms and definitions 
+  given in <eref bibitemid="CC18011"/> and the following apply.</p>
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title>Terms and definitions</title>
+<term id="term-repeat-rule"><preferred><expression>
+<name>repeat rule</name>
+</expression>
+</preferred>
+<definition><verbal-definition><p id="_7d2aaf00-26a6-8f58-dfc1-5b3061251ca2">consists of a set of eligible time intervals (<xref target="term-eti"/>) and
+selection rules (<xref target="term-sel-rule"/>) that allows computation of a set of
+matching instants (<xref target="term-matching-instants"/>)</p></verbal-definition></definition>
+ </term>
+
+<term id="term-sel-rule"><preferred><expression>
+<name>selection rule</name>
+</expression>
+</preferred>
+<definition><verbal-definition><p id="_44a36d56-f59f-8a33-1c67-54888b805030">rule specifying restrictions on the value of a <em>time scale component</em>
+(<eref type="inline" bibitemid="ISO8601-1" citeas="ISO 8601-1"><localityStack><locality type="clause"><referenceFrom>3.1.3.9</referenceFrom></locality></localityStack></eref>)</p></verbal-definition></definition>
+ </term>
+</terms>
+
+<definitions id="symbols" type="symbols" obligation="normative">
+<title>Symbols</title>
+<definitions id="symbols-general" obligation="normative">
+<title>Symbols and abbreviated terms</title>
+<p id="_1775df12-2ceb-e410-b33b-4e677c18c2ab">Representations specified in this document make use of symbols given in <eref type="inline" bibitemid="CC18011" citeas="CC 18011:2018"/> and the following.</p>
+</definitions>
+<definitions id="symbols-composite" obligation="normative">
+<title>Symbols and abbreviated terms</title>
+<dl id="_44f91f5f-d499-a5e9-7a83-c450a74d5c0f"><dt id="symbol-selection">selection</dt><dd><p id="_b081e9dd-6d10-b23d-c747-6f02556e5f04">representation for a set of selection rules as determined in <xref target="selection-general"/></p>
+</dd></dl>
+</definitions>
+<definitions id="symbols-inplace" obligation="normative">
+<title>Symbols and abbreviated terms</title>
+<p id="_95eace98-411f-844d-d050-9e1872ad4834">These symbols are used to represent characters in the date and time
+representations. They are used in representations only, and are
+replaced by one or more characters, as described, in expressions:</p>
+
+<dl id="_e8c8616f-33ba-288a-35be-e110420b60b8"><dt id="symbol-_">!</dt><dd><p id="_7c0ce859-da11-1df1-3e75-fe8d1ac3f464">indicates that the token following this symbol is optional (may be omitted)</p>
+</dd>
+<dt id="symbol-i">i</dt><dd><p id="_416bb8bf-f6bf-926a-cf8c-859f6f029947">a positive integer</p>
+</dd>
+<dt id="symbol-n">n</dt><dd><p id="_32a86339-7126-dc99-2001-2b0bfba013a5">a positive integer or value, may be left absent to signify an unbounded value</p>
+</dd></dl>
+</definitions></definitions></clause>
+
+<clause id="content" obligation="normative">
+<title>Content</title>
+<p id="_95111d81-6052-9fbd-46ee-2a3adec6dbb7">More content.</p>
+</clause>
+
+<clause id="conclusion" obligation="normative">
+<title>Conclusion</title>
+<p id="_5d6df47e-ac77-8892-6bae-fe854a4e401b">Conclusion.</p>
+</clause>
+
+
+
+
+</sections><annex id="annexa" obligation="informative">
+<title>An informative annex</title>
+<p id="_b86e8504-32d9-13a1-d5da-6c93f03854df">Annex content.</p>
+</annex><bibliography><references id="_normative_references" normative="true" obligation="informative">
+<title>Normative references</title><p id="_7700c9c2-af66-2724-095b-c09172f235dc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+ <bibitem id="CC18011" type="standard">  
+<title format="text/plain" language="en">Date and time — Explicit representation</title>
+  <uri type="xml">https://standards.calconnect.org/csd/cc-18011.xml</uri>  <uri type="pdf">https://standards.calconnect.org/csd/cc-18011.pdf</uri>  <uri type="doc">https://standards.calconnect.org/csd/cc-18011.doc</uri>  <uri type="html">https://standards.calconnect.org/csd/cc-18011.html</uri>  <uri type="rxl">https://standards.calconnect.org/csd/cc-18011.rxl</uri>  <docidentifier type="csd" primary="true">CC 18011:2018</docidentifier>  <docnumber>18011</docnumber>  <date type="published">    <on>2018-09-18</on>  </date>  <contributor>    <role type="author"/>    <organization>      
+<name>CalConnect</name>
+    </organization>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>CalConnect</name>
+    </organization>  </contributor>  <edition>1</edition>  <version>    <revision-date>2018-09-18</revision-date>  </version>  <language>en</language>  <script>Latn</script>  <status>    <stage>published</stage>  </status>  <copyright>    <from>2018</from>    <owner>      <organization>        
+<name>CalConnect</name>
+      </organization>    </owner>  </copyright></bibitem>
+ <bibitem id="ISO8601-1" type="standard">  <fetched>2022-09-06</fetched>  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Date and time</title>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Representations for information interchange</title>
+  
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Basic rules</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">Date and time — Representations for information interchange — Part 1: Basic rules</title>
+  <uri type="src">https://www.iso.org/standard/70907.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:70907:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/07/09/70907.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 8601-1</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:8601:-1:stage-60.60:ed-1</docidentifier>  <docnumber>8601</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+<name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>60</stage>    <substage>60</substage>  </status>  <copyright>    <from>2019</from>    <owner>      <organization>        
+<name>ISO</name>
+      </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 8601:2004</formattedref>      <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>    </bibitem>
+  </relation>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 8601-1:2019/FDAmd 1</formattedref>      <docidentifier type="ISO" primary="true">ISO 8601-1:2019/FDAmd 1</docidentifier>      <date type="circulated">        <on>2019-02-25</on>      </date>    </bibitem>
+  </relation>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-06</fetched>      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Date and time</title>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Representations for information interchange</title>
+      
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Basic rules</title>
+      
+<title type="main" format="text/plain" language="en" script="Latn">Date and time — Representations for information interchange — Part 1: Basic rules</title>
+      <uri type="src">https://www.iso.org/standard/70907.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:70907:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/07/09/70907.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 8601-1:2019</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:8601:-1:stage-60.60:ed-1</docidentifier>      <docnumber>8601</docnumber>      <date type="published">        <on>2019-02</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+<name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This document specifies representations of dates of the Gregorian calendar and times based on the 24-hour clock, as well as composite elements of them, as character strings for use in information interchange. It is also applicable for representing times and time shifts based on Coordinated Universal Time (UTC). This document excludes the representation of date elements from non-Gregorian calendars or times not from the 24-hour clock. This document does not address character encoding of representations specified in this document.</abstract>      <status>        <stage>60</stage>        <substage>60</substage>      </status>      <copyright>        <from>2019</from>        <owner>          <organization>            
+<name>ISO</name>
+          </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO 8601:2004</formattedref>          <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>        </bibitem>
+      </relation>      <relation type="updates">        <bibitem type="standard">          <formattedref format="text/plain">ISO 8601-1:2019/FDAmd 1</formattedref>          <docidentifier type="ISO" primary="true">ISO 8601-1:2019/FDAmd 1</docidentifier>          <date type="circulated">            <on>2019-02-25</on>          </date>        </bibitem>
+      </relation>      <place>Geneva</place>    </bibitem>
+  </relation>  <place>Geneva</place></bibitem>
+</references><references id="_bibliography" normative="false" obligation="informative">
+<title>Bibliography</title><bibitem id="ISOIEC646" type="standard">  <fetched>2022-09-06</fetched>  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">Information technology — ISO 7-bit coded character set for information interchange</title>
+  <uri type="src">https://www.iso.org/standard/4777.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO/IEC 646</docidentifier>  <docidentifier type="URN">urn:iso:std:iso-iec:646:stage-90.93:ed-3</docidentifier>  <docnumber>646</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+<name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>      <uri>www.iec.ch</uri>    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>1991</from>    <owner>      <organization>        
+<name>ISO/IEC</name>
+      </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 646:1983</formattedref>      <docidentifier type="ISO" primary="true">ISO 646:1983</docidentifier>    </bibitem>
+  </relation>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-06</fetched>      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">ISO 7-bit coded character set for information interchange</title>
+      
+<title type="main" format="text/plain" language="en" script="Latn">Information technology — ISO 7-bit coded character set for information interchange</title>
+      <uri type="src">https://www.iso.org/standard/4777.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:4777:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/00/47/4777.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO/IEC 646:1991</docidentifier>      <docidentifier type="URN">urn:iso:std:iso-iec:646:stage-90.93:ed-3</docidentifier>      <docnumber>646</docnumber>      <date type="published">        <on>1991-12</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+<name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <contributor>        <role type="publisher"/>        <organization>          
+<name>International Electrotechnical Commission</name>
+          <abbreviation>IEC</abbreviation>          <uri>www.iec.ch</uri>        </organization>      </contributor>      <edition>3</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">Specifies a set of 128 control and graphic characters such as letters, digits and symbols with their coded representation. Applies to alphabets of the Latin script.</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>1991</from>        <owner>          <organization>            
+<name>ISO/IEC</name>
+          </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO 646:1983</formattedref>          <docidentifier type="ISO" primary="true">ISO 646:1983</docidentifier>        </bibitem>
+      </relation>      <place>Geneva</place>    </bibitem>
+  </relation>  <place>Geneva</place></bibitem><bibitem id="RFC5545" type="standard">  <fetched>2022-09-05</fetched>  
+<title type="main" format="text/plain">Internet Calendaring and Scheduling Core Object Specification (iCalendar)</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc5545</uri>  <docidentifier type="IETF" primary="true">RFC 5545</docidentifier>  <docidentifier type="DOI">10.17487/RFC5545</docidentifier>  <docnumber>RFC5545</docnumber>  <date type="published">    <on>2009-09</on>  </date>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">B. Desruisseaux</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_d34649aa-1487-8629-dd5f-a1b667c09298">This document defines the iCalendar data format for representing and exchanging calendaring and scheduling information such as events, to-dos, journal entries, and free/busy information, independent of any particular calendar service or protocol. [STANDARDS-TRACK]</p>
+  </abstract>  <series>    
+<title format="text/plain">RFC</title>
+    <number>5545</number>  </series>  <keyword>calsify</keyword>  <keyword>calsched</keyword>  <keyword>calsch</keyword>  <keyword>caldav</keyword>  <keyword>calendar</keyword>  <keyword>calendaring</keyword>  <keyword>meeting</keyword>  <keyword>event</keyword>  <keyword>task</keyword>  <keyword>to-do</keyword>  <keyword>journal</keyword>  <keyword>appointment</keyword>  <keyword>agenda</keyword>  <keyword>schedule</keyword>  <keyword>scheduling</keyword>  <keyword>ical</keyword>  <keyword>icalendar</keyword>  <keyword>itip</keyword>  <keyword>imip</keyword>  <keyword>text/calendar</keyword>  <keyword>ischedule</keyword>  <keyword>xCalendar</keyword></bibitem>
+ 
+ 
+</references></bibliography>
+</csd-standard>

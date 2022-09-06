@@ -1,0 +1,12 @@
+/__w/mn-templates-cc/mn-templates-cc/site/documents/directive/document.err errors
+
+
+== Document Attributes
+
+(): proposal is not a recognised status
+
+
+== Metanorma XML Syntax
+
+(XML Line 000099:37): element "eref" missing required attributes "citeas" and "type"
+(XML Line 000170:29): element "docidentifier" not allowed yet; missing required element "title"
