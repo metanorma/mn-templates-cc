@@ -19,14 +19,6 @@
 :data-uri-image:
 
 
-////
-
-include::sections/00-foreword.adoc[]
-
-include::sections/00-intro.adoc[]
-
-////
-
 include::sections/01-summary.adoc[]
 
 include::sections/02-content.adoc[]

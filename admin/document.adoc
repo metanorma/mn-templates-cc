@@ -17,20 +17,20 @@
 
 include::sections/0a-foreword.adoc[]
 
-include::01-status.adoc[]
+include::sections/01-status.adoc[]
 
-include::02-liaisons.adoc[]
+include::sections/02-liaisons.adoc[]
 
-include::03-conference.adoc[]
+include::sections/03-conference.adoc[]
 
-include::04-plenary.adoc[]
+include::sections/04-plenary.adoc[]
 
-include::05-events.adoc[]
+include::sections/05-events.adoc[]
 
-include::06-pictures.adoc[]
+include::sections/06-pictures.adoc[]
 
-include::0a-foreword.adoc[]
+include::sections/0a-foreword.adoc[]
 
-include::0b-intro.adoc[]
+include::sections/0b-intro.adoc[]
 
-include::zz-references.adoc[]
+include::sections/zz-references.adoc[]
